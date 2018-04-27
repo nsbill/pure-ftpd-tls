@@ -3,6 +3,9 @@ Docker Pure-ftpd-tls Server
 #docker-compose build  
 #docker-compose up -d
 ```
+docker ps найти id контейнера
+docker exec -it e21c3686f2dc bash
+
 # сгенерить сертификат
 root@e21c3686f2dc:/# mkdir -p /etc/ssl/private
 root@e21c3686f2dc:/# openssl dhparam -out /etc/ssl/private/pure-ftpd-dhparams.pem 2048
